@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar p-4 navbar fixed-top" style="background-color: white; position: relative;">
+        <div class="container-fluid">
+            <div class="brand-wraper">
+                <span style="color: #FF595A;" class="navbar-brand"><a href="index.html" style="text-decoration: none; color: #FF595A;">#</a> Noam Kux Full Stack Developer</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-hashtag"></i>
+            </button>
+            <div class="offcanvas offcanvas-end text-white" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #FF595A;">Noam Kux Full Stack
+                        Dev</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Me</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class=" d-flex">
+        <div class="card m-auto mt-5 text-left" style="width: 75rem; height: 500px;">
+            <div class="card-header text-center">
+                <h3>Contact/Hire Me</h3>
+            </div>
+            <div class="row text-center" style="margin: 0px !important;">
+                <div class="col-md-6 mt-3 px-5">
+                    <h4 class="">lets Work Toghter</h4>
+                    <div class="mb-3">
+                        <label for="userMailInput" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="userMailInput"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="userNameInput" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="userNameInput"
+                            placeholder="Jhon Jhonathan">
+                    </div>
+                    <div class="mb-3">
+                        <label for="userMassage" class="form-label">Message</label>
+                        <textarea class="form-control" id="userMessage" rows="3" style="resize: none;"></textarea>
+                    </div>
+                    <button class="btn btn-outline-secondary w-75" type="submit" onclick="handleFormSubmit()">Submit</button>
+                </div>
+                <div class="col-md-6 mt-3">
+                <h4>My Socials</h4>
+                <a href=""><button class="mt-3 btn btn-outline-primary w-75 rounded-1 p-3">Facebook <i class="fa-brands fa-facebook mx-2"></i></button></a>
+                <a href=""><button class="mt-3 btn btn-outline-warning w-75 rounded-1 p-3">instagram <i class="fa-brands fa-instagram mx-2"></i></button></a>
+                <a href=""><button class="mt-3 btn btn-outline-danger w-75 rounded-1 p-3">Mail <i class="fa-regular fa-envelope mx-2"></i></button></a>
+                <a href=""><button class="mt-3 btn btn-outline-success w-75 rounded-1 p-3">GitHub<i class="fa-brands fa-facebook mx-2"></i></button></a>
+           
+            </div>
+            </div>
+
+        </div>
+
+        <svg id="blobYellow" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+            style="z-index: -1; position: fixed; width: 50%">
+            <path fill="#F9DC5C"
+                d="M32.7,-52.9C42.3,-44.7,50,-35.5,52.6,-25.3C55.2,-15.1,52.8,-3.9,53.7,9.5C54.5,22.9,58.6,38.6,53.1,47.3C47.6,56,32.5,57.8,17.8,63.5C3,69.2,-11.5,78.8,-22.9,76.2C-34.3,73.6,-42.6,58.9,-51.3,46C-60.1,33.2,-69.2,22.2,-75.3,8.2C-81.3,-5.8,-84.3,-22.8,-76.1,-32.3C-68,-41.9,-48.8,-44,-34.3,-50C-19.7,-56,-9.9,-66,0.8,-67.3C11.5,-68.6,23.1,-61.2,32.7,-52.9Z"
+                transform="translate(100 100)" style="text-overflow: hidden;" />
+        </svg>
+
+    </div>
+<script src="contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar p-4 navbar fixed-top" style="background-color: white; position: relative;">
+        <div class="container-fluid">
+            <div class="brand-wraper">
+                <span style="color: #FF595A;" class="navbar-brand" href="#"># Noam Kux Full Stack Developer</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-hashtag"></i>
+            </button>
+            <div class="offcanvas offcanvas-end text-white" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #FF595A;">Noam Kux Full Stack
+                        Dev</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Me</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="blobGrid" style="position: absolute; width: 100% ;height: 100%; z-index:-2;">
+        <div class="row h-50">
+            <div class="col-6 d-flex justify-content-center">
+                <svg id="blobYellow" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="z-index: -1;">
+                    <path fill="#F9DC5C"
+                        d="M32.7,-52.9C42.3,-44.7,50,-35.5,52.6,-25.3C55.2,-15.1,52.8,-3.9,53.7,9.5C54.5,22.9,58.6,38.6,53.1,47.3C47.6,56,32.5,57.8,17.8,63.5C3,69.2,-11.5,78.8,-22.9,76.2C-34.3,73.6,-42.6,58.9,-51.3,46C-60.1,33.2,-69.2,22.2,-75.3,8.2C-81.3,-5.8,-84.3,-22.8,-76.1,-32.3C-68,-41.9,-48.8,-44,-34.3,-50C-19.7,-56,-9.9,-66,0.8,-67.3C11.5,-68.6,23.1,-61.2,32.7,-52.9Z"
+                        transform="translate(100 100)" style="text-overflow: hidden;" />
+                </svg>
+            </div>
+            <div class="col-6">
+
+                <svg id="blobRed" style="transform : translate(0px,-20vw)" viewBox="0 0 200 200"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#D496A7"
+                        d="M37.7,22C29.9,35.3,-8.5,31.2,-19.8,15.8C-31.2,0.5,-15.6,-26.1,3.6,-24C22.8,-21.9,45.5,8.7,37.7,22Z"
+                        transform="translate(100 100)" />
+                </svg>
+
+            </div>
+        </div>
+
+        <div class="row h-50">
+            <div class="col-6 d-flex justify-content-center"></div>
+            <div class="col-6 d-flex justify-content-center" style="
+            transform: translateX(100px);
+            transform: translateY(50px);
+            "><svg id="blobGreen" style="
+                z-index: -1;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#64B6AC"
+                        d="M52.3,-62.2C66.9,-50.1,77.2,-32.8,80.2,-14.3C83.3,4.2,79.1,23.7,67.1,33.2C55,42.7,35.1,42.1,16.9,50.4C-1.2,58.7,-17.6,75.9,-27,73C-36.4,70,-38.9,46.9,-45.4,29.3C-52,11.6,-62.7,-0.7,-61.8,-11.7C-60.9,-22.8,-48.3,-32.7,-36,-45.2C-23.8,-57.6,-11.9,-72.7,3.5,-76.9C18.9,-81,37.8,-74.3,52.3,-62.2Z"
+                        transform="translate(100 100)" style="overflow: hidden;" />
+                </svg></div>
+        </div>
+    </div>
+
+    <div id="blobBlueTop" class="position-absolute w-50 h-50" style=" z-index: -3;">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#5274D6"
+                d="M50.7,-44C60.3,-28.4,59,-7.6,53.3,10.2C47.7,28.1,37.8,43,24.7,48C11.6,53.1,-4.6,48.2,-23.7,41.9C-42.8,35.5,-64.8,27.7,-72.4,11.6C-80,-4.5,-73.4,-28.9,-58.9,-45.5C-44.5,-62.1,-22.2,-71.1,-0.8,-70.4C20.6,-69.7,41.1,-59.5,50.7,-44Z"
+                transform="translate(100 100)" />
+        </svg>
+    </div>
+    <div style="height: 80vh; z-index: 2;">
+        <h6 class="text-center pb-3" id="heyThere"
+            style="color: #FF595A; padding-top: 100px; font-family: 'Nunito', sans-serif; font-weight: 800;">Hey There,
+        </h6>
+        <h1 id="headerName" class="text-center pb-0"
+            style="color: #FF595A; font-family: 'Nunito', sans-serif; font-weight: 900;">I'M
+            NOAM KUX</h1>
+        <h2 id="headerDescription" class="text-center p-5 mx-5"
+            style="color: #FF595A; font-family: 'Nunito', sans-serif; font-weight: 500;">A
+            Front-End Web Developer passionate about creating interactive applications and experiences on the web
+            <br>
+            <button type="button" class="btn align-items-center mt-5 fs-4 p-3 px-5" id="projBtn"
+                style="color: #001233; background-color: #FF595A; font-family: 'Nunito', sans-serif; font-weight: 900;">Projects</button>
+        </h2>
+
+    </div>
+    <svg id="blobBlue" width="100%" height="100%" id="svg" viewBox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg"
+        style="z-index: 2;">
+        <path class="path"
+            d="M 0,600 C 0,600 0,300 0,300 C 103.46411483253587,274.76555023923447 206.92822966507174,249.5311004784689 294,249 C 381.07177033492826,248.4688995215311 451.7511961722489,272.64114832535887 547,293 C 642.2488038277511,313.35885167464113 762.0669856459328,329.90430622009563 873,350 C 983.9330143540672,370.09569377990437 1085.9808612440193,393.7416267942584 1179,386 C 1272.0191387559807,378.2583732057416 1356.0095693779904,339.1291866028708 1440,300 C 1440,300 1440,600 1440,600 Z"
+            stroke="none" stroke-width="0" style="fill: #3185fc;"
+            class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+        div
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path class="path" fill="#3185FC" fill-opacity="1"
+            d="M0,64L48,74.7C96,85,192,107,288,138.7C384,171,480,213,576,192C672,171,768,85,864,74.7C960,64,1056,128,1152,128C1248,128,1344,64,1392,32L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+    </svg>
+
+    <div style="z-index: 1; background-color: white;">
+        <div class="container col-xxl-8 px-4 py-5 pt-0">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="https://source.unsplash.com/random/200x200?sig=1" class="d-block mx-lg-auto img-fluid"
+                        alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Me
+                    </h1>
+                    <p class="lead">Passionate full-stack developer experienced in TypeScript and Node.js. Skilled
+                        in front-end frameworks like React, as well as server-side technologies like Node.js
+                        . Detail-oriented problem solver with a focus on user experience, performance, and
+                        collaboration. Lifelong learner embracing emerging technologies and user-centered design
+                        principles. Let's build something extraordinary!</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="p-5" style="height: fit-content; background: rgb(255,255,255);
+    background: linear-gradient(185deg, rgba(255,255,255,1) 0%, rgba(150,145,135,1) 85%, rgba(255,255,255,1) 100%);">
+        <div class="" style="height: fit-content; padding-bottom: 130px; padding-top: 150px;">
+            <div class="h-50 text-center p-5 display-1 "
+                style="color: #FF595A; font-family: 'Nunito', sans-serif; font-weight: 500;">Used Techologys <h6
+                    class=" m-auto py-5 w-50">Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Quos incidunt nihil consequuntur beatae eligendi
+                    tenetur non nisi.</h6>
+            </div>
+            <div class="containe text-center text-white align-items-center" id="productsTable">
+            </div>
+        </div>
+
+
+        <h2 class="text-center pt-5 mt-5 " style="font-family: 'Nunito', sans-serif; font-weight: 900;">Here Are Some
+            Of My Projects
+        </h2>
+        <h6 class="pt-5 w-50 m-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, a temporibus
+            velit
+            voluptates iste maxime fugiat quod eos alias odio recusandae at, tenetur libero minus modi! Repudiandae
+            perspiciatis blanditiis, voluptatibus minima perferendis unde est nesciunt ullam esse. Quod dolorem ipsum
+            inventore pariatur rerum? Nobis error recusandae asperiores. Similique, quisquam maiores?F</h6>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Media/cookIt-Thumbnail.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage It</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-secondary w-100">Try It Out</a>
+                        <div class="card-footer bg-white">
+
+                            <strong>Stack:</strong><span class="w-date"> Angular, TypeScript, Firebase , Bootstrap ,
+                                HTML5.</span><br>
+                            <span> <strong>Development Field:</strong> Fullstack | <a
+                                    href="https://github.com/KfirLankry/Klas-CRM" target="_blank"> <strong><i
+                                            class="fa-brands fa-github"></i> Github Repo</strong></a></span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Media/johannes-plenio-RWytwNueNng-unsplash.jpg" class="card-img-top" alt="piano">
+                    <div class="card-body">
+                        <h5 class="card-title">My Piano</h5>
+                        <p class="card-text">A simple playable piano usuing js And HTML.
+                            Includes a built-in metronome and various time signatures
+                        </p>
+                        <a href="#" class="btn btn-secondary w-100">Try It Out</a>
+                        <div class="card-footer bg-white">
+
+                            <strong>Stack:</strong><span class="w-date"> Angular, TypeScript, Firebase , Bootstrap ,
+                                HTML5.</span><br>
+                            <span> <strong>Development Field:</strong> Fullstack | <a
+                                    href="https://github.com/KfirLankry/Klas-CRM" target="_blank"> <strong><i
+                                            class="fa-brands fa-github"></i> Github Repo</strong></a></span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Media/julian-o-hayon-Bs-zngH79Ds-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">TechIt</h5>
+                        <p class="card-text">TechIt is a Online tech store inspired by different international web
+                            store.
+                            it aims to provide a seamless user experience through its sleek design.
+                        </p>
+                        <a href="#" class="btn btn-secondary w-100">Try It Out</a>
+                        <div class="card-footer bg-white">
+
+                            <strong>Stack:</strong><span class="w-date"> Angular, TypeScript, Firebase , Bootstrap ,
+                                HTML5.</span><br>
+                            <span> <strong>Development Field:</strong> Fullstack | <a
+                                    href="https://github.com/KfirLankry/Klas-CRM" target="_blank"> <strong><i
+                                            class="fa-brands fa-github"></i> Github Repo</strong></a></span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="products.js"></script>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
