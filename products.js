@@ -89,7 +89,7 @@ let products = [
 for (let i = 0; i < products.length; i++) {
     if (i % 4 === 0) {
         document.getElementById("productsTable").innerHTML +=
-            `<div class="row">
+            `<div class="row ">
                 <div class=" col-md-auto tech-container">
 
                     <img src="${products[i].imageUrl}" width="50px" height="50px" alt="${products[i].name} logo" class="m-2">
