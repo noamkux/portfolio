@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <nav class="navbar p-4 navbar fixed-top" style="background-color: white; position: relative;">
+    <nav class="navbar fixed-top px-4" style="background-color: white; position: relative; height: 97.9px;">
         <div class="container-fluid">
             <div class="brand-wraper">
                 <span style="color: #FF595A;" class="navbar-brand" href="#"># Noam Kux Full Stack Developer</span>
@@ -69,7 +69,7 @@
         </div>
     </nav>
 
-    <div class="blobGrid" style="position: absolute; width: 100% ;height: 100%; z-index:-2;">
+    <div class="blobGrid" style="position: absolute; width: 100% ;height: 150%; z-index:-2; overflow: hidden;">
         <div class="row h-50">
             <div class="col-6 d-flex justify-content-center">
                 <svg id="blobYellow" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="z-index: -1;">
@@ -122,8 +122,8 @@
             style="color: #FF595A; font-family: 'Nunito', sans-serif; font-weight: 500;">A
             Front-End Web Developer passionate about creating interactive applications and experiences on the web
             <br>
-            <button type="button" class="btn align-items-center mt-5 fs-4 p-3 px-5" id="projBtn"
-                style="color: #001233; background-color: #FF595A; font-family: 'Nunito', sans-serif; font-weight: 900;">Projects</button>
+            <a href="#projects"><button type="button" class="btn align-items-center mt-5 fs-4 p-3 px-5" id="projBtn"
+                    style="color: #001233; background-color: #FF595A; font-family: 'Nunito', sans-serif; font-weight: 900;">Projects</button></a>
         </h2>
 
     </div>
@@ -149,7 +149,7 @@
                         alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                 </div>
                 <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Me
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-md-3">About Me
                     </h1>
                     <p class="lead">Passionate full-stack developer experienced in TypeScript and Node.js. Skilled
                         in front-end frameworks like React, as well as server-side technologies like Node.js
@@ -163,11 +163,11 @@
     </div>
     </div>
 
-    <div class="p-5" style="height: fit-content; background: rgb(255,255,255);
-    background: linear-gradient(185deg, rgba(255,255,255,1) 0%, rgba(150,145,135,1) 85%, rgba(255,255,255,1) 100%);">
-        <div class="" style="height: fit-content; padding-bottom: 130px; padding-top: 150px;">
+    <div class="p-5" style="height: fit-content;background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(200,181,181,1) 43%, rgba(255,255,255,1) 94%);">
+        <div class="tech-wraper" style="height: fit-content;">
             <div class="h-50 text-center p-5 display-1 "
-                style="color: #FF595A; font-family: 'Nunito', sans-serif; font-weight: 500;">Used Techologys <h6
+                style="color: #1b1919; font-family: 'Nunito', sans-serif; font-weight: 500;">Used Techologys <h6
                     class=" m-auto py-5 w-50">Lorem
                     ipsum dolor sit amet consectetur adipisicing elit. Quos incidunt nihil consequuntur beatae eligendi
                     tenetur non nisi.</h6>
@@ -177,16 +177,15 @@
         </div>
 
 
-        <h2 class="text-center pt-5 mt-5 " style="font-family: 'Nunito', sans-serif; font-weight: 900;">Here Are Some
+        <h2 class="text-center pt-5 mt-5 " style="font-family: 'Nunito', sans-serif; font-weight: 900;" id="projects">
+            Here Are Some
             Of My Projects
         </h2>
         <h6 class="pt-5 w-50 m-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, a temporibus
             velit
-            voluptates iste maxime fugiat quod eos alias odio recusandae at, tenetur libero minus modi! Repudiandae
-            perspiciatis blanditiis, voluptatibus minima perferendis unde est nesciunt ullam esse. Quod dolorem ipsum
-            inventore pariatur rerum? Nobis error recusandae asperiores. Similique, quisquam maiores?F</h6>
+            voluptates iste maxime fugiat quod eos alias odio recusandae at, tenetur libero minus modi</h6>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-6 mt-4">
                 <div class="card">
                     <img src="Media/cookIt-Thumbnail.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -198,21 +197,20 @@
 
                             <strong>Stack:</strong><span class="w-date"> Angular, TypeScript, Firebase , Bootstrap ,
                                 HTML5.</span><br>
-                            <span> <strong>Development Field:</strong> Fullstack | <a
-                                    href="https://github.com/KfirLankry/Klas-CRM" target="_blank"> <strong><i
-                                            class="fa-brands fa-github"></i> Github Repo</strong></a></span>
+                            <span> <strong>Development Field:</strong> Fullstack | <a href="" target="_blank">
+                                    <strong><i class="fa-brands fa-github"></i> Github Repo</strong></a></span>
 
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-6 mt-4">
                 <div class="card">
                     <img src="Media/johannes-plenio-RWytwNueNng-unsplash.jpg" class="card-img-top" alt="piano">
                     <div class="card-body">
                         <h5 class="card-title">My Piano</h5>
-                        <p class="card-text">A simple playable piano usuing js And HTML.
-                            Includes a built-in metronome and various time signatures
+                        <p class="card-text">A playable piano made by usuing js And HTML.
+                            Includes a built-in metronome with various time signatures, and octave shift.
                         </p>
                         <a href="#" class="btn btn-secondary w-100">Try It Out</a>
                         <div class="card-footer bg-white">
@@ -227,7 +225,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-6 mt-4">
                 <div class="card">
                     <img src="Media/julian-o-hayon-Bs-zngH79Ds-unsplash.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -236,7 +234,29 @@
                             store.
                             it aims to provide a seamless user experience through its sleek design.
                         </p>
-                        <a href="https://tech-it-noamk.netlify.app/index.html" class="btn btn-secondary w-100">Try It Out</a>
+                        <a href="https://tech-it-noamk.netlify.app/index.html" class="btn btn-secondary w-100">Try It
+                            Out</a>
+                        <div class="card-footer bg-white">
+
+                            <strong>Stack:</strong><span class="w-date"> Angular, TypeScript, Firebase , Bootstrap ,
+                                HTML5.</span><br>
+                            <span> <strong>Development Field:</strong> Fullstack | <a
+                                    href="https://github.com/KfirLankry/Klas-CRM" target="_blank"> <strong><i
+                                            class="fa-brands fa-github"></i> Github Repo</strong></a></span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-4">
+                <div class="card">
+                    <img src="Media/brian-mcgowan-kKyxIwvljBg-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Whats The Weather</h5>
+                        <p class="card-text">what's the weather is a simple app that tells you the current weather of every city in the word
+                        </p>
+                        <a href="https://tech-it-noamk.netlify.app/index.html" class="btn btn-secondary w-100">Try It
+                            Out</a>
                         <div class="card-footer bg-white">
 
                             <strong>Stack:</strong><span class="w-date"> Angular, TypeScript, Firebase , Bootstrap ,
@@ -252,6 +272,34 @@
         </div>
 
     </div>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+
+    <footer class="text-center text-lg-start" style="background-color: #9c9c9c;">
+        <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <i class="fab fa-youtube"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <i class="fab fa-instagram"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <i class="fab fa-twitter"></i>
+            </button>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <!-- End of .container -->
 
 
     <script src="products.js"></script>

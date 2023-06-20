@@ -7,6 +7,12 @@ body {
     place-items: center;
 }
 
+
+.tech-wraper {
+    padding-bottom: 130px;
+    padding-top: 150px;
+}
+
 .navbar-brand {
     width: 100%;
     animation: typing 4s steps(50) alternate infinite, blink .5s step-end infinite alternate;
@@ -122,7 +128,7 @@ body {
 .tech-container {
     width: 100px;
     height: fit-content;
-    background-color: #d6d0c6;
+    background-color: #dddddd;
     border-radius: 15px;
     border: 2px solid white;
     margin: auto;
@@ -132,6 +138,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
+
 
 @keyframes spin {
     0% {
@@ -230,7 +237,17 @@ body {
     border: 0px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 @media (max-width:570px) {
+    .tech-wraper {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
     .navbar-brand {
         font-size: 15px;
 
@@ -260,9 +277,20 @@ body {
 
 
 
-@media (max-width:440px) {
+@media (max-width:510px) {
     .tech-container {
         margin: 10%;
+
+    }
+
+
+}
+
+
+
+@media (max-width:440px) {
+    .tech-container {
+        margin: 5px;
 
     }
 
