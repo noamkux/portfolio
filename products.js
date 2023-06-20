@@ -153,7 +153,6 @@ function changeColorOnScroll() {
     for (let pat of path) { pat.setAttribute("style", `fill:${newHexColor}`) }
     //     path.setAttribute('style', `fill: ${newHexColor}`);
     document.getElementById("progressBar").style.width += 1
-    console.log(scrollPercentage);
 }
 // Helper function to convert a hexadecimal color code to RGB values
 function hexToRgb(hex) {
